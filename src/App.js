@@ -17,11 +17,26 @@ function App() {
         <span> {user.last_name}</span>
       </div>
     ))
+  const pageCount = Math.ceil(users.length / userPerPage)
+  const changePage = ({selected}) => {
+    setPageNumber(selected)
+  }
 
   return (
     <div className="App">
       <h1>List Users</h1>
       {displayUsers}
+      <ReactPaginate 
+        previousLabel={"Previous"}
+        nextLabel={"Next"}
+        pageCount={pageCount}
+        onPageChange={changePage}
+        containerClassName={"paginationBttns"}
+        previousLinkClassName={"previousBttn"}
+        nextLinkClassName={"nextBttn"}
+        disabledClassName={"paginationDisabled"}
+        activeClassName={"paginationActive"}
+      />
     </div>
   );
 }
