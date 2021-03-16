@@ -32,10 +32,10 @@ function App() {
         pageCount={pageCount}
         onPageChange={changePage}
         containerClassName={"paginationBttns"}
-        // previousLinkClassName={"previousBttn"}
-        // nextLinkClassName={"nextBttn"}
-        // disabledClassName={"paginationDisabled"}
-        // activeClassName={"paginationActive"}
+        previousLinkClassName={"previousBttn"}
+        nextLinkClassName={"nextBttn"}
+        disabledClassName={"paginationDisabled"}
+        activeClassName={"paginationActive"}
       />
     </div>
   );

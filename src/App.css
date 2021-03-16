@@ -24,3 +24,8 @@
   color: white;
   background-color: #2B2EFF;
 }
+
+.paginationActive a {
+  color:white;
+  background-color: #2B2EFF;
+}
